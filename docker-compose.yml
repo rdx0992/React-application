@@ -1,8 +1,0 @@
-version: "3"
-services:
-  clientx-react-app:
-    build: .
-      container_name: clientx-react-app
-      dockerfile: dockerfile       # Name of the Dockerfile to use for building the image
-    ports:
-      - 3000:3000   # Port mapping: host_port:container_port

@@ -1,0 +1,9 @@
+version: "3"
+services:
+  clientx-react-app:
+    build:
+      context: .
+      dockerfile: dockerfile    # docker file name specified
+    container_name: clientx-react-app   # to give container name 
+    ports:
+      - 3000:3000 # Exposing container and ec2 port 3000
