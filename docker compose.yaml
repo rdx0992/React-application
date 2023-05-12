@@ -1,0 +1,8 @@
+version: '3'
+services:
+  clientx-react-app:
+    build:
+      context: ./aesthisia-demo    # Path to the context directory containing the Dockerfile
+      dockerfile: Dockerfile       # Name of the Dockerfile to use for building the image
+    ports:
+      - 3000:3000   # Port mapping: host_port:container_port

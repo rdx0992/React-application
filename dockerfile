@@ -5,13 +5,13 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy json Packages in working directory
-COPY package*.json ./
+COPY aesthisia-demo/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the entire project to the working directory
-COPY . .
+COPY aesthisia-demo ./
 
 # Build the React app
 RUN npm run build
